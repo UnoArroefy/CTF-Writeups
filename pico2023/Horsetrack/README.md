@@ -49,7 +49,7 @@ exploit 1 doesn't require libc leak, but 2 and 3 are required us to leak the lib
 
 ## exploit
 
-remember that i said before that libc 2.33 implement safe linking and we have to mangle and demangle so our exploit will works, here is how to mangle and demangle, mangling and demangling is a way to defeat safe linking but first what we need to do is leak heap address.
+remember that i said before libc 2.33 implement safe linking and we have to mangle and demangle so our exploit will works, here is how to mangle and demangle, mangling and demangling is a way to defeat safe linking but first what we need to do is leak heap address.
 
 implement the mangle and demangle function to defeat safe linking
 
