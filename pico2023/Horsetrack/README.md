@@ -26,15 +26,15 @@ There's a user in discord that said i can use ghidra script manager to deal with
 
 okay so let's check the decompilation, so basically switch operation is just switch operation nothing important, what's important is in the add function but since the binary is stripped we don't know the name of the add function but it works something like adding a horse.
 
-![add func]()
+![add func](https://raw.githubusercontent.com/UnoArroefy/CTF-Writeups/main/pico2023/Horsetrack/h2.png)
 
 note that this function naming is for myself to understand the binary because is stripped, when you run the program it's always asking for strings i think it's for horse naming purposes, seriously we have to input something but the thing is we can't put something if we want to leak something from it so the trick is to fail the getchar to return -1 with `\xff`, you can see the decompilation below.
 
-![after_add func]()
+![after_add func](https://raw.githubusercontent.com/UnoArroefy/CTF-Writeups/main/pico2023/Horsetrack/h3.png)
 
 there's another function that we have to know, when we type 0 the switch operation actually call something i called it cheat function because it's like cheathing the race thos we get disqualified if we do that, but there's alway a trick.
 
-![cheat func]()
+![cheat func](https://raw.githubusercontent.com/UnoArroefy/CTF-Writeups/main/pico2023/Horsetrack/h4.png)
 
 look at the switch operation there's variable that get assign by 1, we can overwrite that to avoid getting caught for cheating because for some exploit this is a must.
 
