@@ -53,11 +53,11 @@ now our goal is to find c1_ and c2_ value so that it will cancel each other (mod
 
 we know p, g, A where A is g^a mod p, based on this value we can solve the equation with A
 
-we have to make c1_^-a --> g^-a and c2_ --> A (g^a) those value will cancel each other so the final equation is
+we have to make c1_^-a --> g^-a and c2_ --> A (g^a mod p) those value will cancel each other so the final equation is
 
 g^-ak * g^-a * g^ak * g^a * m mod p = m
 
-c1_^-a = g^-a so c1_ = 2, c2_ = A
+c1_^-a = g^-a so c1_ = g = 2, c2_ = A = g^a mod p
 
 we get the msg
 
