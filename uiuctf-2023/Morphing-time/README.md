@@ -57,8 +57,7 @@ we have to make c1_^-a --> g^-a and c2_ --> A (g^a) those value will cancel each
 
 g^-ak * g^-a * g^ak * g^a * m mod p = m
 
-c1_^-a = g^-a so c1_ = 2
-c2_ = A
+c1_^-a = g^-a so c1_ = 2, c2_ = A
 
 we get the msg
 
